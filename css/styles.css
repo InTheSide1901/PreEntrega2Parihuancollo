@@ -1,0 +1,948 @@
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kanit:wght@300&family=Playfair+Display&family=Roboto&family=Roboto+Condensed&family=Source+Sans+Pro&family=Vina+Sans&display=swap');
+    :root {
+        --rosa: #DD046F;
+        --gris: #9F9F9F;
+    }
+    *p {
+        font-family: 'Playfair Display', serif;
+    }
+    h1{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{ 
+        list-style-type: none;
+    }
+    ul{
+        padding: 0;
+    }
+    header {
+        background-image: url(../img/fondo-superior.jpg);
+        background-repeat: no-repeat;                       /*fondo imagen de navegacion*/
+        background-size: cover;
+        height: 320px;
+        border-bottom: 5px var(--gris) solid;
+    }
+    header h1{
+        font-size: 70px;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .navegacion_superior{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+    .botones_de_acceso{
+        display: flex;
+    }
+    .botones_de_acceso li{
+        list-style-type: none;
+    }
+    .botones_de_acceso li a{
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+        background-color: #d9d9d9;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 15px;
+
+    }
+    .botones_de_acceso .boton_registrarse {
+        margin-right: 100px;
+    }
+
+    .navegacion_superior a img{
+        width: 20vw;
+        min-width: 80px;
+        max-width: 130px;
+        padding: 0;
+    }
+    .navegacion_superior input{
+        border-radius: 15px;
+        height: 50px;
+        width: 50vw;
+        min-width: 10px;
+        max-width: 1000px;
+    }
+    .navegacion_inferior ul {
+        display: flex;
+        margin: 0;
+        justify-content: space-evenly;
+        padding: 0px;
+    }       
+    .navegacion_inferior ul li{
+        margin: 20px 0;
+    }
+    .navegacion_inferior ul li a{
+        color: white;
+        background-color: #DD046F;
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+    .botones_de_acceso_responsive{
+        display: none;
+    }
+    @media (max-width: 768px){
+        .navegacion_superior{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navegacion_superior input{
+            width: 68vw;
+            min-width: 20px;
+        }
+        .botones_de_acceso{
+            display: none;
+        }
+        .navegacion_inferior{
+            display: none;
+        }
+        .botones_de_acceso_responsive{
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0 10px 0;
+        }
+        .botones_de_acceso_responsive li a{
+        background-color: #D9D9D9;
+        padding: 10px;
+        color: black;
+        border-radius: 15px;        
+        }
+        
+    }
+    /*contenido principal*/
+    .contenedor{
+        padding: 20px 0;
+    }
+    .contenedor_imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 20px;
+    }
+    .contenedor_fondo2{
+        background-image: url(../img/fondo-inferior.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vw;
+
+    }
+    .contenedor_fondo{
+        padding-top: 20px;
+        
+    }
+    .formulario-acceder-base{
+        background-color: #9F9F9F;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+    .mk_11_derecha img,
+    .bt5_izquierda img{
+        width: 20vw;
+        height: 900px;
+        border: 1px solid white;
+        margin: 0 10px;
+    }
+    .contenido_principal_portada img{
+        width: 60vw;
+        height: 35vw;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+    }
+    .contenido_principal_portada h2{
+        width:70vw;
+        width: 100%;
+        height: 5vw;
+        background-color: #DD046F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px auto;
+        font-size: 30px;
+        
+    }
+    .contenedor_contenido{
+        display: flex;
+    }
+    .contenido_principal_inferior div img{
+        display: none;
+    }
+
+
+    .contenido_principal_inferior{
+        flex-direction: column;
+    }
+    .ghost_wwe{
+        display: flex;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .contenido_principal_portada h2{
+            font-size: 15px;
+            
+        }
+        
+        
+        
+    }
+    @media (min-width: 1024px) {
+        .contenido_principal_inferior{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 1024px) {
+        .mk_11_derecha img,
+        .bt5_izquierda img{
+            display: none;
+        }
+        .contenido_principal_portada{
+            margin: 0 auto;
+        }
+        .contenido_principal_portada img{
+            width: 85vw;
+        height: 40vw;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .contenedor_contenido{
+            flex-direction: column;
+        }
+        .contenido_principal_inferior{
+            display: flex;
+            margin: 0 auto
+        }
+        .contenido_principal_inferior div img {
+            display: flex;
+            width: 42vw;
+            height: 20vw;
+        }
+        .contenido_ghost img,
+        .contenido_wwe img{
+            display: flex;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        
+        .portada img{
+            width: 24vw;
+            height: 15vw;
+            margin: 10px 20px;
+            
+        }
+        .contenido_destacados_luchas{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .contenido_destacados_luchas div img{
+            width: 25vw;
+            height: 15vw;
+            margin: 0;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+
+    /*footer*/
+    footer {
+        background-color: #4D4D4D;
+        width: 100%;
+        height: 80vw;
+        max-height: 400px;
+    }
+    .iconos {
+        display: flex;
+        justify-content: center;
+    }
+    .iconos a img {
+        margin: 0 10px;
+        width: 10vw;
+        max-width: 100px;
+        height: 10vw;
+        max-height: 100px;
+    }
+    .titulo-gaming {
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    .titulo-gaming p {
+        font-size: 50px;
+        color: #ffffff;
+        margin: 10px 0;
+    }
+    .subtitulos-gaming {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        
+    }
+    .subtitulos-gaming a {
+        color: #ffffff;
+        font-size: 40px;
+        margin: 0 10px;
+        text-decoration: none;
+        
+    }
+    .derechos {
+        text-align: center;
+        justify-content: start;
+    }
+    .derechos p {
+        color: #ffffff;
+        margin: 20px;
+    }
+    @media (max-width: 1024px) {
+        .titulo-gaming p,
+        p,
+        .subtitulos-gaming a{
+            font-size: 30px;
+        }
+        footer{
+            max-height: 300px;
+        }
+    }
+    @media (max-width: 768px) {
+        .titulo-gaming p,
+        p,
+        .subtitulos-gaming a{
+            font-size: 20px;
+        }
+        
+    }
+    @media (max-width: 520px) {
+        .subtitulos-gaming{
+            flex-direction: column;
+        }
+        .subtitulos-gaming p,
+        p,
+        .subtitulos-gaming a{
+            font-size: 10px;
+        }
+    }
+    /*acceder*/
+
+    .form-acceder {
+        width: 638px;
+        height: 542px;
+        margin: 100px auto 0 auto;
+    }
+    main section form {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .formulario-acceder-base {
+        width: 551px;
+        height: 600px;
+    }
+    main section form fieldset .boton-enviar-acceder input {
+        background-color: #DD046F;
+        font-size: 30px;
+        width: 232px;                                                   /*boton de envio de acceder*/
+        height: 68px;
+        color: white;
+        border-radius: 20px;
+    }
+    .formulario-acceder-base h3 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .contenedor-formulario-acceder div input {
+        margin-top: 30px;
+        margin-left: 35px;
+        border-radius: 20px;
+        font-size: 30px;
+    }
+    .boton-enviar-acceder {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .boton-enviar-acceder form input {
+        color:#ffffff;
+        font-size: 30px;
+        background-color: #DD046F;
+        width: 232px;
+        height: 68px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    .opciones-de-emergencia div {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .opciones-de-emergencia div a {
+        color: #000000;
+        font-size: 25px;
+    }
+    main {
+        background-image: url(../img/fondo-inferior.jpg);
+    }
+    .contenedor_fondo2{
+        background-image: url(../img/fondo-inferior.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vw;
+
+    }
+    .contenedor_fondo{
+        padding-top: 20px;
+        
+    }
+    .formulario-acceder-base{
+        background-color: #9F9F9F;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    /*fullgames*/
+    .bg-base-full {
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        width: 211px;
+        height: 500px;
+    }
+    .todo-el-contenido-full {
+        text-align: center;   
+    }
+    .juego-full img {
+        width: 207px;
+        height: 254px;
+        border-radius: 10px;
+        margin-top: 2px;
+    }
+    .precio-juego-full h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+    }
+    .botones-de-compra-full {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .botones-de-compra-full a {
+        text-decoration: none;
+        background-color: #DD046F;
+        width: 195px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: black;
+        margin: 5px auto;
+        border-radius: 20px;
+    }
+    .botones-de-compra-full .detalles {
+        background-color: #BABABA;
+    }
+    .primera-fila-full {
+        display: flex; 
+    }
+    .primera-fila-full section {
+        margin: 10px 30px;
+    }
+    .todo-el-contenido-central-full {
+        display: flex;
+        justify-content: space-between;
+        height: 1000px;
+
+    }
+    @media (max-width: 1024px) {
+        .item-5{
+            display: none;
+        }
+        .bg-base-full,
+        .todo-el-contenido-full,
+        .juego-full img{
+            width: 20vw;
+            height: 30vw;
+        }
+        .primera-fila-full section{
+            margin: 10px;
+        }
+        .todo-el-contenido-full{
+            background-color: #9F9F9F;
+        }
+    }
+    @media (max-width: 1600px) {
+        .bt5_izquierda-full img,
+        .mk_11_derecha-full img{
+            display: none;
+        }
+    }
+    .mk_11_derecha-full img,
+    .bt5_izquierda-full img{
+        width: 20vw;
+        height: 900px;
+        border: 1px solid white;
+        margin: 0 10px;
+    }
+    /*contactanos*/
+    main {
+        background-image: url(../img/fondo-inferior.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+        padding-top: 20px;
+    }
+    fieldset{
+        margin: 0;
+        padding: 0;
+    }
+    main div form fieldset h3{
+        text-align: center;
+        font-size: 40px;
+        margin: 10px 0;
+    }
+    main h2{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    main div form{
+        background-color: #9d9d9d;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 20px;
+        
+    }
+    main div form fieldset {
+        border: 1px black solid;
+        border-radius: 20px;
+    }
+    .contenedor-formulario{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+    }
+    .nombre-formulario{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nombre-formulario input{
+        border-radius: 15px;
+        width: 100%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .apellido-formulario{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .apellido-formulario input{
+        border-radius: 15px;
+        width: 100%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .email-formulario{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }.email-formulario input{
+        border-radius: 15px;
+        width: 100%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .tel-formulario{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .tel-formulario input{
+        border-radius: 15px;
+        width: 100%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .direccion-formulario{
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .direccion-formulario input{
+        border-radius: 15px;
+        width: 100%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .textarea-formulario{
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textarea-formulario textarea{
+        border-radius: 15px;
+        margin: 0 5px;
+        width: 100%;
+        
+    }
+    .boton-envio-contactanos {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton-envio-contactanos input{
+        border-radius: 15px;
+        width: 25%;
+        height: 40px;
+        margin: 0 5px;
+    }
+    @media (max-width: 768px) {
+        form fieldset{
+            height: 100%;
+        }
+        .contenedor-formulario{
+            height: 100%;
+        }
+        .contenedor-formulario{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px 50px 50px 100px 50px;
+        }
+        .nombre-formulario{
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+        .nombre-formulario input{
+            width: 100%;
+        }
+        .apellido-formulario{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+        .email-formulario{
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+        .tel-formulario{
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+        }
+        .direccion-formulario{
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+        }
+        .textarea-formulario{
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
+        }
+        .textarea-formulario textarea{
+            width: 100%;
+            
+        }
+        .boton-envio-contactanos{
+            grid-column: 2 / 3;
+            grid-row: 7 / 8;
+        }
+        .boton-envio-contactanos input{
+            width: 100%;
+        }
+        main div form fieldset h3{
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+
+    }
+    /*acceder*/
+    .contenedor-acceder{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-rows: 20px 60px 60px 60px 60px 60px 60px 60px;
+    }
+    main div form {
+        max-width: 600px;
+    }
+    .correo-acceder{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .correo-acceder input{
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        height: 100%;
+    }
+    .contraseña-acceder{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .contraseña-acceder input{
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        height: 100%;
+    }
+    .boton-envio{
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        text-align: center;
+    }
+    .boton-envio input{
+        height: 100%;
+        border-radius: 15px;
+    }
+    .contenedor-acceder div input{
+        font-size: 30px;
+    }
+    .recordar-contraseña{
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .registrarse-aca{
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .recordar-contraseña a,
+    .registrarse-aca a{
+        color: black;
+        text-decoration:underline;
+        font-size: 25px;
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+        main div form fieldset h3 {
+            font-size: 40px;
+        }
+        .recordar-contraseña a,
+        .registrarse-aca a{
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    /*registro*/
+
+    .contenedor-registro{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-rows: 20px 60px 60px 60px 60px 60px 60px 60px 60px;
+    }
+    main div form {
+        max-width: 600px;
+    }
+    .nombre_completo_registro{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .nombre_completo_registro input{
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        height: 100%;
+    }
+    .correo-registro{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .correo-registro input{
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        height: 100%;
+    }
+    .contraseña-registro{
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .contraseña-registro input{
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        height: 100%;
+    }
+    .boton-registro{
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+        text-align: center;
+    }
+    .boton-registro input{
+        height: 100%;
+        border-radius: 15px;
+    }
+    .contenedor-registro div input{
+        font-size: 30px;
+    }
+    /*nuestros locales*/
+    main section h2 {
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+    main section div h3, p {
+        color: #ffffff;
+    }
+    .contenedor-de-ubicacion {
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .contenedor-de-ubicacion section{
+        margin: 20px;
+    }
+    .contenedor-de-ubicacion-bg {
+        background-color: rgba(169, 169, 169, 0.3);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 50px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    main div section iframe {
+        border-radius: 30px;
+        border: 3px solid black;
+        width: 80vw;
+        max-width: 500px;
+        height: 380px;
+    }
+    @media (max-width: 768px) {
+        .contenedor-de-ubicacion{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    /*mas recomendados */
+    .todo-el-contenido-full-pantalla-completa {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto;
+        background-color: rgba(74, 74, 74, 0.5);
+        padding: 10px;
+        border-radius: 20px;
+
+    }
+    .contenido-juego-recomendado {
+        display: flex;
+        margin-top: 50px;
+    }
+    .contenido-juego-recomendado .video-mk11 iframe {
+        width: 40vw;
+        height: 585px;
+        border: 1px solid white;
+    }
+    .todo-el-contenido-full-pantalla-completa section div h2 {
+        font-size: 40px;
+        background-color:#DD046F;
+        border: 1px solid white;
+        border-radius: 20px;
+        max-width: 300px;
+        margin: 10px auto;
+        
+    }
+    .todo-el-contenido-full-pantalla-completa section div p {
+        font-size: 22px;
+        margin-left: 20px;
+        width: 50vw;
+    }
+    
+    @media (max-width: 1280px) {
+        .todo-el-contenido-full-pantalla-completa section div p{
+            font-size: 18px;
+            max-width: 400px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .todo-el-contenido-full-pantalla-completa{
+            flex-direction: column;
+        }
+        
+            .contenido-juego-recomendado .video-mk11 iframe {
+                width: 100%;
+                height: 585px;
+                border: 1px solid white;
+                
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+
+    
